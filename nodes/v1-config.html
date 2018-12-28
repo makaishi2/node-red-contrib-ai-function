@@ -14,7 +14,7 @@
   limitations under the License.
 -->
 
-<script type="text/x-red" data-template-name="ai-function-config">
+<script type="text/x-red" data-template-name="func-config">
     <div class="form-row">
         <label for="node-config-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-config-input-name" placeholder="Name">
@@ -45,13 +45,13 @@
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType("",{
+    RED.nodes.registerType("func-config",{
         category: "config",
         color: "rgb(180, 50, 50)",
         defaults: {
             host: {value:"", required:true},
             accesskey: {value:"", required:false},
-            instanceid: {value:"", required:true},
+            instanceid: {value:"", required:false},
             name: {value:""}
         },
         credentials: {

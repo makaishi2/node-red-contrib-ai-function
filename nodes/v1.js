@@ -296,7 +296,7 @@ module.exports = function(RED) {
     });
   }
 
-  RED.nodes.registerType('ai-function', Node, {
+  RED.nodes.registerType('func', Node, {
     credentials: {
       token: {
         type: 'text'

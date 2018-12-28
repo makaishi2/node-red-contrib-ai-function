@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-ai-function",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Watson AI Function",
   "main": "v1.js",
   "scripts": {
@@ -14,8 +14,8 @@
   ],
   "node-red": {
     "nodes": {
-      "ai-function": "nodes/v1.js",
-      "ai-function-config": "nodes/v1-config.js"
+      "func": "nodes/v1.js",
+      "func-config": "nodes/v1-config.js"
     }
   },
   "dependencies": {

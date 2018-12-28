@@ -15,7 +15,7 @@
  **/
  module.exports = function(RED) {
 
-   function ConfigNode(config) {
+   function Node(config) {
      var node = this;
      RED.nodes.createNode(this, config);
 
@@ -34,7 +34,7 @@
      }
    }
 
-   RED.nodes.registerType('ai-function-config', ConfigNode, {
+   RED.nodes.registerType('func-config', Node, {
      credentials: {
        password: {type:"password"},
        username: {type:"text"}
